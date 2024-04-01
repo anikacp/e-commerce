@@ -3,7 +3,7 @@
 const itemsCollection = [
     {
         "_id": "630b7c690dd4ac34455cb262",
-        "name": "Versace",
+        "name": "Hat",
         "category": "men",
         "color": "black",
         "type": "shoes",

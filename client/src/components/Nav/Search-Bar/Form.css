@@ -1,19 +1,16 @@
-
 .search__form {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin: auto;
     align-self: center;
-   
 }
 
 .search__form__input {
-    width: 100%;
+    width: calc(100% - 120px); /* Adjusted width to accommodate both buttons with some space between them */
     height: 45px;
-    /* border-radius: 30px; */
     outline: none;
     padding-left: 25px;
     font-size: .9rem;
@@ -26,9 +23,9 @@
     position: absolute;
     height: 45px;
     width: 50px;
-    background-color: #FFE26E;;
+    background-color: #FFE26E;
     color: rgb(0, 0, 0);
-    right: 0px;
+    right: 60px; /* Adjusted positioning to provide some space between the input and the voice icon */
     font-weight: bold;
     border-color: #FFE26E;
     border-style: solid;
@@ -40,9 +37,21 @@
     cursor: pointer;
 }
 
-.search__icon {
-    height: 50%;
-    width: auto;
+.voice__button {
+    position: absolute;
+    height: 45px;
+    width: 50px;
+    background-color: transparent; /* Make the background transparent */
+    color: #000000; /* Change the color to black */
+    right: 0px; /* Positioned next to the search icon */
+    font-weight: bold;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 50%; /* Make the button circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -50,5 +59,3 @@
         width: 200px;
     }
 }
-
-
