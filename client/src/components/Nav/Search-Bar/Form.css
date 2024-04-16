@@ -53,7 +53,24 @@
     align-items: center;
     cursor: pointer;
 }
-
+.voice__language__container select {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid #FFE26E; 
+    border-radius: 5px;
+    background-color: #ffffff; 
+    color: #333; 
+  }
+  
+  .voice__language__container select:focus {
+    outline: none;
+    border-color: #2c3e50; 
+  }
+    
+  .active-mic {
+    color: green;
+  }
+  
 @media screen and (max-width: 600px) {
     .search__form {
         width: 200px;
